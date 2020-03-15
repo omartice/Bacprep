@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="fr">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Nouvelle page 1</title>
+<script language="JavaScript">
+<!--
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<!--mstheme--><link rel="stylesheet" href="radi1011.css">
+<meta name="Microsoft Theme" content="radius 1011">
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'button4.jpg', /*url*/'button5.jpg', /*url*/'buttonB1.jpg', /*url*/'buttonC1.jpg', /*url*/'button19.jpg', /*url*/'button33.jpg')">
+
+<p align="center" dir="ltr">
+<img border="0" id="img3" src="button37.jpg" height="80" width="400" alt="Bac Exams" fp-style="fp-btn: Simple Line 3; fp-font: Verdana; fp-font-size: 16" fp-title="Bac Exams" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'button19.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'button37.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'button33.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'button19.jpg')"></p>
+<p>&nbsp;</p>
+
+<p align="center"><a href="Bac%20exam%202011_Literacy%20programme.pdf">
+<img border="0" id="img1" src="button6.jpg" height="30" width="150" alt="Bac Exam 2011" fp-style="fp-btn: Brick Column 1; fp-font-size: 12" fp-title="Bac Exam 2011" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'button4.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'button6.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'button5.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'button4.jpg')"></a></p>
+<p align="center"><a href="Bac%20exam%202011_answer%20key.pdf">Answer Key</a></p>
+<p align="center"><a href="Bac%20Exam_2010.pdf">
+<img border="0" id="img2" src="buttonA1.jpg" height="30" width="150" alt="Bac Exam 2010" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'buttonB1.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'buttonA1.jpg')" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'buttonC1.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'buttonB1.jpg')" fp-style="fp-btn: Brick Column 1; fp-font-size: 12" fp-title="Bac Exam 2010"></a></p>
+<p align="center"><a href="Bac%20exam%202010_Answer%20key.pdf">Answer Key</a></p>
+
+</body>
+
+</html>
